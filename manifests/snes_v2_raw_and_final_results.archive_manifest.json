@@ -1,0 +1,19 @@
+{
+  "archive": "snes_v2_raw_and_final_results",
+  "combined_archive_sha256": "47b09091eed3531a1a20ed051407bf4a726431a110009c166a42ed5ac89264e3",
+  "combined_archive_size_bytes": 26461699,
+  "compression": "tar.zst",
+  "dataset_dir_name": "snes_v2_raw_and_final_results",
+  "description": "SNES/V2 raw CADs plus final healed geometry, meshes, and validation.",
+  "part_count": 1,
+  "parts": [
+    {
+      "path": "archives/snes_v2_raw_and_final_results/snes_v2_raw_and_final_results.tar.zst.part-0000",
+      "sha256": "47b09091eed3531a1a20ed051407bf4a726431a110009c166a42ed5ac89264e3",
+      "size_bytes": 26461699
+    }
+  ],
+  "reconstruct_command": "cat archives/snes_v2_raw_and_final_results/snes_v2_raw_and_final_results.tar.zst.part-* > snes_v2_raw_and_final_results.tar.zst && sha256sum snes_v2_raw_and_final_results.tar.zst && tar --use-compress-program zstd -xf snes_v2_raw_and_final_results.tar.zst",
+  "split_size": "95m",
+  "zstd_level": 6
+}

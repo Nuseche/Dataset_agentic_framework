@@ -1,0 +1,44 @@
+{
+  "archive": "physiological_cads_final_results_core",
+  "combined_archive_sha256": "23598c2c0e9afaf80e232826cdf3c647fcad5fddbca0dfe3bf8b47f9429ee536",
+  "combined_archive_size_bytes": 543852856,
+  "compression": "tar.zst",
+  "dataset_dir_name": "physiological_cads_final_results_core",
+  "description": "Physiological CAD final results without duplicate VTK payloads.",
+  "part_count": 6,
+  "parts": [
+    {
+      "path": "archives/physiological_cads_final_results_core/physiological_cads_final_results_core.tar.zst.part-0000",
+      "sha256": "ac8a6ae2709e09cdb555e78e27491c5a079dc3ba66689eea2754c8adc82fc78c",
+      "size_bytes": 99614720
+    },
+    {
+      "path": "archives/physiological_cads_final_results_core/physiological_cads_final_results_core.tar.zst.part-0001",
+      "sha256": "74fd190220b08e71266da51d326ac539a1280da3c8d2a70dd052fcb3d1cae8f6",
+      "size_bytes": 99614720
+    },
+    {
+      "path": "archives/physiological_cads_final_results_core/physiological_cads_final_results_core.tar.zst.part-0002",
+      "sha256": "70b20fc39a19cebe0af460ab51237162cd7412c5c0878ba82266f1d212c1f554",
+      "size_bytes": 99614720
+    },
+    {
+      "path": "archives/physiological_cads_final_results_core/physiological_cads_final_results_core.tar.zst.part-0003",
+      "sha256": "aeda6cf1981e4cc4aa954dffe0a7396cca117e6aab51ed70b96be72c1aea0c02",
+      "size_bytes": 99614720
+    },
+    {
+      "path": "archives/physiological_cads_final_results_core/physiological_cads_final_results_core.tar.zst.part-0004",
+      "sha256": "f3ad104ea33bf5fdfafbe93fbd7da92e98ac2b6d59788fcf5ca525927ab3c5b3",
+      "size_bytes": 99614720
+    },
+    {
+      "path": "archives/physiological_cads_final_results_core/physiological_cads_final_results_core.tar.zst.part-0005",
+      "sha256": "46decd7f908a0879dac01a5d6213317caaafc9d032d2e90650a5b1f6cafdbf80",
+      "size_bytes": 45779256
+    }
+  ],
+  "reconstruct_command": "cat archives/physiological_cads_final_results_core/physiological_cads_final_results_core.tar.zst.part-* > physiological_cads_final_results_core.tar.zst && sha256sum physiological_cads_final_results_core.tar.zst && tar --use-compress-program zstd -xf physiological_cads_final_results_core.tar.zst",
+  "split_size": "95m",
+  "zstd_level": 6
+}

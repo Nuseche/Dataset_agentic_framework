@@ -1,0 +1,24 @@
+{
+  "archive": "thingi10k_100_raw_and_audited_outputs",
+  "combined_archive_sha256": "d281f165f59838fd4817690d8dd44a4b989c849b6a67f52955715d58542a4600",
+  "combined_archive_size_bytes": 162516357,
+  "compression": "tar.zst",
+  "dataset_dir_name": "thingi10k_100_raw_and_audited_outputs",
+  "description": "Thingi10K 100 raw inputs and final audited repair/meshability artifacts.",
+  "part_count": 2,
+  "parts": [
+    {
+      "path": "archives/thingi10k_100_raw_and_audited_outputs/thingi10k_100_raw_and_audited_outputs.tar.zst.part-0000",
+      "sha256": "f896ccdffec79f82a88b0daf1cb0fb997ba0c61c3301d93e2b6ce4291d1cf26b",
+      "size_bytes": 99614720
+    },
+    {
+      "path": "archives/thingi10k_100_raw_and_audited_outputs/thingi10k_100_raw_and_audited_outputs.tar.zst.part-0001",
+      "sha256": "90f5acea699e09d529a5671c50f1c0152b6ebb951c48eb1c692f2d476287cab2",
+      "size_bytes": 62901637
+    }
+  ],
+  "reconstruct_command": "cat archives/thingi10k_100_raw_and_audited_outputs/thingi10k_100_raw_and_audited_outputs.tar.zst.part-* > thingi10k_100_raw_and_audited_outputs.tar.zst && sha256sum thingi10k_100_raw_and_audited_outputs.tar.zst && tar --use-compress-program zstd -xf thingi10k_100_raw_and_audited_outputs.tar.zst",
+  "split_size": "95m",
+  "zstd_level": 6
+}

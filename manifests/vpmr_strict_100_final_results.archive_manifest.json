@@ -1,0 +1,19 @@
+{
+  "archive": "vpmr_strict_100_final_results",
+  "combined_archive_sha256": "0fc4ddb135edc4aa01aba9906f3008ec9d10c4ae229bc503809529bd6bd79373",
+  "combined_archive_size_bytes": 39106718,
+  "compression": "tar.zst",
+  "dataset_dir_name": "vpmr_strict_100_final_results",
+  "description": "Accepted VPMR strict-100 rows and their final audited artifacts.",
+  "part_count": 1,
+  "parts": [
+    {
+      "path": "archives/vpmr_strict_100_final_results/vpmr_strict_100_final_results.tar.zst.part-0000",
+      "sha256": "0fc4ddb135edc4aa01aba9906f3008ec9d10c4ae229bc503809529bd6bd79373",
+      "size_bytes": 39106718
+    }
+  ],
+  "reconstruct_command": "cat archives/vpmr_strict_100_final_results/vpmr_strict_100_final_results.tar.zst.part-* > vpmr_strict_100_final_results.tar.zst && sha256sum vpmr_strict_100_final_results.tar.zst && tar --use-compress-program zstd -xf vpmr_strict_100_final_results.tar.zst",
+  "split_size": "95m",
+  "zstd_level": 6
+}

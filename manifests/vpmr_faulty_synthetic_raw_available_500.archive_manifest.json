@@ -1,0 +1,34 @@
+{
+  "archive": "vpmr_faulty_synthetic_raw_available_500",
+  "combined_archive_sha256": "59477ff52fc9af59f029738c490f65a5b5d7204b53e424bf1bef44621cae0157",
+  "combined_archive_size_bytes": 299380022,
+  "compression": "tar.zst",
+  "dataset_dir_name": "vpmr_faulty_synthetic_raw_available_500",
+  "description": "Raw VPMR faulty synthetic OBJ/MTL assets available from the source split ZIP.",
+  "part_count": 4,
+  "parts": [
+    {
+      "path": "archives/vpmr_faulty_synthetic_raw_available_500/vpmr_faulty_synthetic_raw_available_500.tar.zst.part-0000",
+      "sha256": "7708c29034af9154c056124bf4f676567df9b27b3740991e689caa4833befb1c",
+      "size_bytes": 99614720
+    },
+    {
+      "path": "archives/vpmr_faulty_synthetic_raw_available_500/vpmr_faulty_synthetic_raw_available_500.tar.zst.part-0001",
+      "sha256": "f8c493a0bb37fb429fcb07bfd81241f24f968a79cda2be099a7180d531cf0a36",
+      "size_bytes": 99614720
+    },
+    {
+      "path": "archives/vpmr_faulty_synthetic_raw_available_500/vpmr_faulty_synthetic_raw_available_500.tar.zst.part-0002",
+      "sha256": "71f1774fb6ebf9fa6dd51697095d83f5d5824c6e1505e048c60f8faf33b57184",
+      "size_bytes": 99614720
+    },
+    {
+      "path": "archives/vpmr_faulty_synthetic_raw_available_500/vpmr_faulty_synthetic_raw_available_500.tar.zst.part-0003",
+      "sha256": "cc6b35728d34349463ffc85666be18676501ebf73b92e8ac33cc41969fcd076d",
+      "size_bytes": 535862
+    }
+  ],
+  "reconstruct_command": "cat archives/vpmr_faulty_synthetic_raw_available_500/vpmr_faulty_synthetic_raw_available_500.tar.zst.part-* > vpmr_faulty_synthetic_raw_available_500.tar.zst && sha256sum vpmr_faulty_synthetic_raw_available_500.tar.zst && tar --use-compress-program zstd -xf vpmr_faulty_synthetic_raw_available_500.tar.zst",
+  "split_size": "95m",
+  "zstd_level": 6
+}
